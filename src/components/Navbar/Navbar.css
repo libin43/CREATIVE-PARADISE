@@ -1,5 +1,5 @@
 .navbar {
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     height: 10%;
     display: flex;
@@ -8,6 +8,7 @@
     background-color: black;
     color: white;
     padding: 10px 80px;
+    z-index: 3;
   }
   
   .navbar-center {
@@ -31,7 +32,6 @@
   #nav-menu li {
     padding: 0 20px;
     cursor: pointer;
-    
     font-size: 1.1rem;
     font-weight: 400;
     transition: 0.3s ease-in-out;
@@ -42,10 +42,10 @@
   #nav-menu li:hover,
   #nav-menu li.active {
     background: linear-gradient(to right, #800080, #8b00ff);
-    -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+    -webkit-background-clip: text;
     background-clip: text;
-    color: transparent; /* Hide the original text color */
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Add a shadow for better readability */
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
   }
   
   #nav-menu li:hover::after,
@@ -113,6 +113,7 @@
       background: black;
       padding: 40px 0 0 10px;
       transition: 0.4s ease-in-out;
+      z-index: 2;
     }
   
     #nav-menu.active {

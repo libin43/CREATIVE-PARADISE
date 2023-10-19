@@ -1,0 +1,137 @@
+.feature-container {
+    background: black;
+    padding: 1rem;
+}
+
+.feature-grid-first {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    margin-bottom: 10px;
+    padding: 2rem;
+  }
+  
+  .feature-grid-second {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    margin-bottom: 10px;
+    padding: 2rem;
+  }
+
+  .feature-sub-grid1,
+  .feature-sub-grid2,
+  .feature-sub-grid3,
+  .feature-sub-grid4,
+  .feature-sub-grid5 {
+    border-radius: 10px;
+    background: linear-gradient(to right, #111011 0%, #2b102b 50%, #0a090a 100%);
+    width: 100%;
+  }
+
+  .feature-sub-grid1,
+  .feature-sub-grid2,
+  .feature-sub-grid3,
+  .feature-sub-grid4,
+  .feature-sub-grid5 {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+  
+  .feature-main-title {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .content-title {
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .content-body {
+    color: rgb(233, 203, 233);
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  .content-image {
+    text-align: center;
+  }
+
+  .earning img {
+    width: 250px;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    background: linear-gradient(to right, #1d0f2c 0%,  #0a090a 100%);
+    border-radius: 18px;
+    padding: 1rem;
+    margin: 10px;
+  }
+  
+  
+  .card-title {
+    color: white;
+    font-size: 10px;
+  }
+
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    font-size: 15px;
+    padding-top: 5px;    
+  }
+
+  .card-img img {
+    width: 100px;
+  }
+
+  @media (max-width: 1200px) {
+    .feature-grid-first {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+    .feature-grid-second {
+      display: grid;
+      grid-template-columns: 1fr;
+
+    }
+
+    .card {
+      background: linear-gradient(to right, #1d0f2c 0%,  #0a090a 100%);
+      border-radius: 18px;
+      padding: 0;
+      margin: 10px;
+    }
+    
+    
+    .card-title {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .card-body {
+      display: flex;
+      justify-content: space-between;
+      color: whitesmoke;
+      font-size: 15px;
+      padding-top: 5px;    
+    }
+  
+    .card-img img {
+      width: 60px;
+    }
+  }
