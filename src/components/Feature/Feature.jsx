@@ -74,7 +74,7 @@ export const Feature = () => {
                             Bikini pairs
                         </div>
                         <div className="card-body">
-                            <span>100</span>
+                            <span>$100</span>
                             <span> <img src={star} alt="" />4.3</span>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ export const Feature = () => {
                             Blue Bikini
                         </div>
                         <div className="card-body">
-                            <span>100</span>
+                            <span>$100</span>
                             <span> <img src={star} alt="" />4.3</span>
                         </div>
                     </div>
